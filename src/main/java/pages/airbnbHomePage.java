@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class airbnbHomePage extends BasePage {
+public class airbnbHomePage  {
 
     // Search Bar
     private static final By LBL_LOCATION = By.xpath("//p[text()='Bạn sắp đi đâu?']");
@@ -22,7 +22,5 @@ public class airbnbHomePage extends BasePage {
     private static final By TXT_CAN_THO = By.xpath("//h2[text()='Cần Thơ']");
     private static final By TXT_DRIVE_TIME_NHA_TRANG = By.xpath("//h2[text()='Nha Trang']/following-sibling::p");
 
-    public airbnbHomePage(WebDriver driver, WebDriverWait wait) {
-        super(driver, wait);
-    }
+
 }
